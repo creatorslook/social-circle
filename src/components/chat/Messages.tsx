@@ -24,7 +24,7 @@ const Messages = () => {
 
   return (
     <div className="mx-auto max-w-full px-4 py-8 sm:px-6 lg:px-8 overflox-x-none mb-32">
-      {ordereredMessage.map((message: any) => {
+      {handledMessageQuery.map((message: any) => {
         return (
           <div className="flex items-center mb-5">
            
