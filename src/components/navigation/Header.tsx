@@ -21,7 +21,7 @@ const Header = () => {
 
   const username = auth.currentUser?.displayName;
   const email = auth.currentUser?.email;
-  const photoURL = auth.currentUser?.photoURL;
+  const photoURL:any = auth.currentUser?.photoURL;
 
 
 
