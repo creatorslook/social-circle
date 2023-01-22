@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../../lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import lodash from "lodash";
+import lodash from "lodash-es";
 
 const Messages = () => {
   const [messages, setMessages] = useState<any>([]);
