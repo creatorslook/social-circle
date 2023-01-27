@@ -172,7 +172,7 @@ const Header = () => {
         </div>
       </header>
 
-      <Textbox message={message} setMessage={setMessage} sendMessage={sendMessage} />
+      {authStatus && <Textbox message={message} setMessage={setMessage} sendMessage={sendMessage} />}
     </>
   );
 };
