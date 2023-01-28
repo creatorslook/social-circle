@@ -20,11 +20,9 @@ const Messages = () => {
   });
 
   const ordereredMessage = lodash.orderBy(messages, ["timestamp"], ["asc"]);
-  const handledMessageQuery = lodash.sampleSize(ordereredMessage, total)
-
   return (
     <div className="mx-auto max-w-full px-4 py-8 sm:px-6 lg:px-8 overflox-x-none mb-32">
-      {handledMessageQuery.map((message: any) => {
+      {ordereredMessage.map((message: any) => {
         return (
           <div className="flex items-center mb-5">
            
